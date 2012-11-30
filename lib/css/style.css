@@ -1,0 +1,202 @@
+/* WIP */
+* {
+  padding: 0;
+  margin: 0;
+}
+html {
+  overflow-y: scroll;
+}
+body {
+  font-family: Arial;
+  color: #f7fafc;
+  padding-top: 70px;
+  background: #f9fbfc;
+  overflow: hidden;
+  position: relative;
+  line-height: 120%;
+  font-size: 18px;
+  letter-spacing: 0.03em;
+}
+#content {
+  position: relative;
+  margin: 0 auto;
+}
+#controls {
+  padding: 15px;
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  right: 0;
+  border-bottom: 1px solid #959999;
+  box-shadow: 1px 1px 5px rgba(0,0,0,0.5);
+}
+#controls .wrap {
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  display: -moz-box;
+  -moz-box-orient: horizontal;
+  display: box;
+  box-orient: horizontal;
+  width: 100%;
+}
+#controls #tumblr_address {
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  display: -moz-box;
+  -moz-box-orient: horizontal;
+  display: box;
+  box-orient: horizontal;
+  -webkit-box-flex: 1;
+  -moz-box-flex: 1;
+  box-flex: 1;
+  overflow: hidden;
+  background: #fff;
+  border-radius: 3px;
+  border: 1px solid #959999;
+}
+#controls #tumblr_address input {
+  display: block;
+  background: #f7fafc;
+  font-size: 18px;
+  border: none;
+  padding: 6px 8px;
+  -webkit-box-flex: 1;
+  -moz-box-flex: 1;
+  box-flex: 1;
+}
+#controls #tumblr_address input:focus {
+  background: #fff;
+  outline: none;
+}
+#controls #tumblr_address .submit {
+  display: block;
+  -webkit-box-flex: 0;
+  -moz-box-flex: 0;
+  box-flex: 0;
+  font-size: 16px;
+  color: #313233;
+  text-decoration: none;
+  text-shadow: -1px -1px 0px #fff;
+  padding: 7px 8px;
+  border-left: 1px solid #959999;
+}
+#controls #tumblr_address .submit:hover {
+  background: #f7fafc;
+}
+#controls #scroll_top {
+  -webkit-box-flex: 0;
+  -moz-box-flex: 0;
+  box-flex: 0;
+  margin-left: 10px;
+  border-radius: 3px;
+  overflow: hidden;
+}
+#controls #scroll_top .top {
+  display: block;
+  font-size: 16px;
+  color: #313233;
+  text-decoration: none;
+  text-shadow: -1px -1px 0px #fff;
+  padding: 7px 8px;
+  border: 1px solid #959999;
+}
+#controls #scroll_top .top:hover {
+  background: #f7fafc;
+}
+.app-view {
+  -webkit-transform: translate3d(0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  -webkit-perspective: 1000;
+}
+section {
+  position: relative;
+  margin: 0 auto;
+}
+section.animate {
+  -webkit-transition: height 0.4s ease-out;
+  -moz-transition: height 0.4s ease-out;
+  -opera-transition: height 0.4s ease-out;
+  transition: height 0.4s ease-out;
+}
+section.animate article {
+  -webkit-transition: all 0.4s ease-out;
+  -moz-transition: all 0.4s ease-out;
+  -opera-transition: all 0.4s ease-out;
+  transition: all 0.4s ease-out;
+}
+article {
+  position: absolute;
+  padding: 15px;
+  margin: 15px;
+  border: solid 1px rgba(0,0,0,0.2);
+  border-radius: 3px;
+  overflow: hidden;
+  display: block;
+  float: left;
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  -webkit-perspective: 1000;
+  box-shadow: 0px 3px 3px -3px #0a140a;
+}
+article .photo {
+  background: #ccc;
+}
+article .desc {
+  font-size: 8px;
+  display: none;
+}
+article li {
+  display: none;
+}
+article li:first-child {
+  display: block;
+}
+article img {
+  -webkit-transform: translate3d(0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  -webkit-perspective: 1000;
+  display: block;
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+  -webkit-transition: all 0.25s linear;
+  -webkit-transition: all 0.25s linear;
+  -moz-transition: all 0.25s linear;
+  -opera-transition: all 0.25s linear;
+  transition: all 0.25s linear;
+  -webkit-box-shadow: inset 0px 0px 20px -5px rgba(0,0,0,0.8);
+  box-shadow: inset 0px 0px 20px -5px rgba(0,0,0,0.8);
+}
+article.error .photo {
+  background-color: #ffbaba;
+  background-image: url("http://www.iconfinder.com/ajax/download/png/?id=42554&s=64");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+article.loading img {
+  opacity: 0;
+}
+article {
+  background: #fff;
+}
+#controls {
+  background: #f7fafc;
+  background: -moz-linear-gradient(top, #f7fafc 0%, #e0e3e5 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #f7fafc), color-stop(100%, #e0e3e5));
+  background: -webkit-linear-gradient(top, #f7fafc 0%, #e0e3e5 100%);
+  background: -o-linear-gradient(top, #f7fafc 0%, #e0e3e5 100%);
+  background: -ms-linear-gradient(top, #f7fafc 0%, #e0e3e5 100%);
+  background: linear-gradient(to bottom, #f7fafc 0%, #e0e3e5 100%);
+}
+.submit,
+.top {
+  background: #f7fafc;
+  background: -moz-linear-gradient(top, #f7fafc 0%, #e0e3e5 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #f7fafc), color-stop(100%, #e0e3e5));
+  background: -webkit-linear-gradient(top, #f7fafc 0%, #e0e3e5 100%);
+  background: -o-linear-gradient(top, #f7fafc 0%, #e0e3e5 100%);
+  background: -ms-linear-gradient(top, #f7fafc 0%, #e0e3e5 100%);
+  background: linear-gradient(to bottom, #f7fafc 0%, #e0e3e5 100%);
+}

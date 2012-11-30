@@ -1,0 +1,11 @@
+{
+  "dependencies": {
+    "requirejs": "https://raw.github.com/jrburke/requirejs/master/require.js",
+    "underscore": "https://raw.github.com/documentcloud/underscore/master/underscore.js",
+    "backbone": "https://raw.github.com/documentcloud/backbone/master/backbone.js",
+    "jquery": "https://raw.github.com/components/jquery/master/jquery.js",
+    "handlebars": "http://cloud.github.com/downloads/wycats/handlebars.js/handlebars-1.0.rc.1.js",
+    "requirejs-text": "https://raw.github.com/requirejs/text/master/text.js",
+    "masonry": "https://raw.github.com/desandro/vanilla-masonry/master/masonry.js"
+  }
+}

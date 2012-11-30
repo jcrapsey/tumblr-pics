@@ -1,0 +1,12 @@
+{
+    "name":"MozillaBall",
+    "developer": {
+        "name":"Mozilla Labs Demo",
+        "url":"http://mozillalabs.com"
+    },
+    "description":"Fast and furious Open Web development game play!\n\nScore points by implementing Open Web features.\n\nWin powerups by upgrading your JavaScript engine, adding security features, and hardware acceleration.",
+    "launch_path": "/",
+    "icons":{
+        "128":"/icon.png"
+    }
+}
