@@ -1,0 +1,13 @@
+doctype 5
+html(lang="en")
+  head
+    - if (isBuild)
+      title= "Tumblr Pics"
+      script(type="text/javascript", src="app/main.js")
+    - else
+      title= "Tumblr Pics (Development)"
+      script(data-main="app/main", type="text/javascript", src="vendors/requirejs/require.js")
+
+    link(rel="stylesheet",type="text/css", href="styles/main.css")
+
+  body

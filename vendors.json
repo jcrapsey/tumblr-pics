@@ -1,0 +1,14 @@
+{
+  "name": "tumblr-pics-revamp",
+  "version": "0.0.0",
+  "dependencies": {
+    "jquery": "~1.9.1",
+    "requirejs": "~2.1.5",
+    "backbone": "~1.0.0",
+    "underscore": "~1.4.4",
+    "text": "~2.0.5",
+    "lodash": "~1.2.0",
+    "handlebars": "~1.0.0-rc.3",
+    "jquery-masonry": "~2.1.08"
+  }
+}
